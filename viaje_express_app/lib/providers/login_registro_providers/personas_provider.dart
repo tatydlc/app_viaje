@@ -3,10 +3,10 @@ import 'dart:async';
 import 'package:http/http.dart' as http;
 import 'package:viaje_express_app/models/persona.dart';
 import 'package:viaje_express_app/models/persona_rol.dart';
-import 'package:viaje_express_app/providers/persona_rol_provider.dart';
+import 'package:viaje_express_app/providers/login_registro_providers/persona_rol_provider.dart';
 
 class PersonaProvider {
-  String _url = 'http://192.168.1.2:59454/Persona';
+  String _url = 'http://192.168.1.4:59454/Persona';
   Persona personaid= new Persona();
   PersonaRol personaRol= new PersonaRol();
   final personaRolProvider= new PersonaRolProvider();

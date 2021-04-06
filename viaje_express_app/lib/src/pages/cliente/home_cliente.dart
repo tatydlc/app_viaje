@@ -43,9 +43,10 @@ class _ClientePageState extends State<ClientePage> {
               children: <Widget>[
                 Icon(Icons.local_taxi_outlined),
                 CupertinoButton(child:  Text(
-                "Quiero transportarme",
+                "Viaje express",
                 style: TextStyle(
                     color: Colors.black, fontWeight: FontWeight.normal),     
+                
                 ), onPressed: (){
                   Navigator.pop(context);
                   Navigator.pushNamed(context, 'transporte_cliente', arguments: usuario);
@@ -83,7 +84,7 @@ class _ClientePageState extends State<ClientePage> {
                     color: Colors.black, fontWeight: FontWeight.normal),     
                 ), onPressed: (){
                   Navigator.pop(context);
-                  Navigator.pushNamed(context, 'transporte_cliente', arguments: usuario);
+                  Navigator.pushNamed(context, 'solicitudes_cliente', arguments: usuario);
                 })    
                ]             
             ),

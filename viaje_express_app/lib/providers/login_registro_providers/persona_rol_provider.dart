@@ -5,7 +5,7 @@ import 'package:viaje_express_app/models/persona_rol.dart';
 
 
 class PersonaRolProvider {
-  String _url = 'http://192.168.1.2:59454/PersonaRol';
+  String _url = 'http://192.168.1.4:59454/PersonaRol';
  
 
   Future<bool> crearPersonaRol(PersonaRol personaRol)async{

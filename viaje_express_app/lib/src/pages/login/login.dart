@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:viaje_express_app/models/persona.dart';
 import 'package:viaje_express_app/models/usuario.dart';
-import 'package:viaje_express_app/providers/personas_provider.dart';
+import 'package:viaje_express_app/providers/login_registro_providers/personas_provider.dart';
 class LoginPage extends StatefulWidget {
 
   @override
@@ -17,10 +17,11 @@ class _LoginPageState extends State<LoginPage> {
 
   Widget build(BuildContext context) {
     return Scaffold(
+    
          appBar: AppBar(
            title: Text('Inicio'),
          ),
-         body: SingleChildScrollView(
+         body:  SingleChildScrollView(
           child: Container (
           padding: EdgeInsets.all(10.0),
           child: Form(

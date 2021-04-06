@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:viaje_express_app/src/pages/chofer/home_chofer.dart';
 import 'package:viaje_express_app/src/pages/cliente/home_cliente.dart';
+import 'package:viaje_express_app/src/pages/cliente/solicitudes_cliente.dart';
 import 'package:viaje_express_app/src/pages/cliente/transporte_cliente.dart';
 import 'package:viaje_express_app/src/pages/login/login.dart';
 import 'package:viaje_express_app/src/pages/login/registro_cliente.dart';
@@ -20,7 +21,7 @@ class MyApp extends StatelessWidget {
         'home_chofer'   :(BuildContext context)=>ChoferPage(),
         'home_cliente'  :(BuildContext context)=>ClientePage(),
         'transporte_cliente': (BuildContext context)=>TransportePage(),
-        
+        'solicitudes_cliente':(BuildContext context)=>SolicitudesPage()
       },
     );
   }

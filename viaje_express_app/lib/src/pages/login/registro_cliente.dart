@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:viaje_express_app/models/persona.dart';
 import 'package:viaje_express_app/models/persona_rol.dart';
-import 'package:viaje_express_app/providers/persona_rol_provider.dart';
-import 'package:viaje_express_app/providers/personas_provider.dart';
+import 'package:viaje_express_app/providers/login_registro_providers/persona_rol_provider.dart';
+import 'package:viaje_express_app/providers/login_registro_providers/personas_provider.dart';
 class RegistroPage extends StatefulWidget {
 
   @override
