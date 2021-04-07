@@ -100,7 +100,7 @@ class _ClientePageState extends State<ClientePage> {
                     color: Colors.black, fontWeight: FontWeight.normal),     
                 ), onPressed: (){
                   Navigator.pop(context);
-                  Navigator.pushNamed(context, 'transporte_cliente', arguments: usuario);
+                  Navigator.pushNamed(context, 'rutas_cliente', arguments: usuario);
                 })    
                ]             
             ),
