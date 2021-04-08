@@ -250,7 +250,7 @@ class _RegistroPageState extends State<RegistroPage> {
       label:Text('Registrarse'),
       onPressed: (){
         _submit();
-        Navigator.pushNamed(context, 'login'); 
+        Navigator.pop(context); 
       },
     );
   }
