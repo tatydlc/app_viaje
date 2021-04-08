@@ -67,7 +67,7 @@ class _ClientePageState extends State<ClientePage> {
                     color: Colors.black, fontWeight: FontWeight.normal),     
                 ), onPressed: (){
                   Navigator.pop(context);
-                  Navigator.pushNamed(context, 'transporte_cliente', arguments: usuario);
+                  Navigator.pushNamed(context, 'paquete_cliente', arguments: usuario);
                 })    
                ]             
             ),
@@ -104,7 +104,22 @@ class _ClientePageState extends State<ClientePage> {
                 })    
                ]             
             ),
-          ),
+          ),  PopupMenuItem(
+            value: 4,
+            child: Row(
+              children: <Widget>[
+                Icon(Icons.fact_check_outlined),
+                CupertinoButton(child:  Text(
+                "Agendar viaje",
+                style: TextStyle(
+                    color: Colors.black, fontWeight: FontWeight.normal),     
+                ), onPressed: (){
+                  Navigator.pop(context);
+                  Navigator.pushNamed(context, 'rutas_cliente', arguments: usuario);
+                })    
+               ]             
+            ),
+          )
         ],
     icon: Container(
       height: double.infinity,

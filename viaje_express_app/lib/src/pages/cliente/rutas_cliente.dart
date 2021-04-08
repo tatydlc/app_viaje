@@ -45,7 +45,19 @@ class _RutasPageState extends State<RutasPage> {
       child: ListTile(
         title: Text('${ruta.rutaFecha}-${ruta.rutaMonto}'),
       subtitle: Text('Ruta'),
+      trailing: PopupMenuButton(
+        itemBuilder: (context) {
+          return [
+            PopupMenuItem(
+              child: ListTile(
+                    leading: Icon(Icons.fact_check_outlined), title: Text('Agendar')),
+              value: 'agendar',
+            )
+          ];
+        },
+      )
       ) 
-     );
+    );
   }
+  
 }

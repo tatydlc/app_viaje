@@ -47,12 +47,63 @@ class _SolicitudesPageState extends State<SolicitudesPage> {
     );
   }
   Widget _crearItem(SolicitudCliente solicitud){
-  
+  if(solicitud.tipoSolicitudId==2){
+    if(solicitud.estadoSolicitudId==2){
     return Card(
       child: ListTile(
-        title: Text('${solicitud.solicitudClienteSalidaSolCliente}-${solicitud.solicitudClienteDestinoSolCliente}'),
-      subtitle: Text('Solicitud'),
+        title: Text(
+          '${solicitud.solicitudClienteSalidaSolCliente}-${solicitud.solicitudClienteDestinoSolCliente}'         
+          ),
+        
+      subtitle: Text('Pediente', style: TextStyle( color: Colors.red)),
+      selectedTileColor: Colors.white,
+      leading:  Icon(Icons.local_taxi_outlined, color: Colors.red,),
+      
       ) 
      );
+    }else if(solicitud.estadoSolicitudId==1){
+      return Card(
+            child: ListTile(
+              title: Text(
+                '${solicitud.solicitudClienteSalidaSolCliente}-${solicitud.solicitudClienteDestinoSolCliente}'         
+                ),
+              
+            subtitle: Text('Confirmada', style: TextStyle( color: Colors.green)),
+            selectedTileColor: Colors.white,
+            leading:  Icon(Icons.local_taxi_outlined, color: Colors.green,),
+            
+            ) 
+          );
+    }
   }
+  else{
+       if(solicitud.estadoSolicitudId==2){
+    return Card(
+      child: ListTile(
+        title: Text(
+          '${solicitud.solicitudClienteSalidaSolCliente}-${solicitud.solicitudClienteDestinoSolCliente}'         
+          ),
+        
+      subtitle: Text('Pediente', style: TextStyle( color: Colors.red)),
+      selectedTileColor: Colors.white,
+      leading:  Icon(Icons.grid_view, color: Colors.red,),
+      
+      ) 
+     );
+    }else if(solicitud.estadoSolicitudId==1){
+      return Card(
+            child: ListTile(
+              title: Text(
+                '${solicitud.solicitudClienteSalidaSolCliente}-${solicitud.solicitudClienteDestinoSolCliente}'         
+                ),
+              
+            subtitle: Text('Confirmada', style: TextStyle( color: Colors.green)),
+            selectedTileColor: Colors.white,
+            leading:  Icon(Icons.grid_view, color: Colors.green,),
+            
+            ) 
+          );
+    }
+  }
+}
 }
